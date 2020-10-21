@@ -1,8 +1,8 @@
 FROM centos:8
 
 ENV container=docker
-ENV ANSIBLE_HOST_KEY_CHECKING False
 ENV pip_packages "ansible"
+ENV ANSIBLE_HOST_KEY_CHECKING=False
 
 # Install systemd -- See https://hub.docker.com/_/centos/
 RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
