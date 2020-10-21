@@ -1,5 +1,5 @@
 FROM centos:8
-LABEL maintainer="Jeff Geerling"
+
 ENV container=docker
 ENV ANSIBLE_HOST_KEY_CHECKING False
 ENV pip_packages "ansible"
